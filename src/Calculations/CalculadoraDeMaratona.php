@@ -6,7 +6,7 @@ class CalculadoraDeMaratona
 
     public function inclui(Titulo $titulo):void
     {
-        $this->duracaoMaratona += $titulo->duracaEmMinutos();
+        $this->duracaoMaratona += $titulo->duracaoEmMinutos();
     }
 
     public function duracao(): int
