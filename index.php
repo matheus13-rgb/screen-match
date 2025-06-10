@@ -1,5 +1,6 @@
 <?php
 
+require __DIR__ . "/src/Model/Titulo.php";
 require __DIR__ . "/src/Model/Genero.php";
 require __DIR__ . "/src/Model/Filme.php";
 
