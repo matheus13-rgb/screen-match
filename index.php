@@ -1,7 +1,8 @@
 <?php
 
-require __DIR__ . "/src/Model/Titulo.php";
 require __DIR__ . "/src/Model/Genero.php";
+require __DIR__ . "/src/Model/Titulo.php";
+require __DIR__ . "/src/Model/Serie.php";
 require __DIR__ . "/src/Model/Filme.php";
 
 echo "Bem-vindo ao ScreenMatch \n";
@@ -22,4 +23,12 @@ var_dump($filme);
 
 echo $filme->media() . "\n";
 
-echo $filme->anoLancamento;
+echo $filme->anoLancamento . "\n";
+
+$serie = new Serie('Breaking bad', 2008, Genero::Drama, 10, 20, 30);
+
+echo $serie->anoLancamento . "\n";
+
+$serie->avalia(10);
+
+echo $serie->media() . "\n";
