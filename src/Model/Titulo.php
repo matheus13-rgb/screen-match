@@ -25,5 +25,5 @@ abstract class Titulo
         return $somaNotas / $quantidadeNotas;
     }     
 
-    abstract public function  duracaoEmMinutos(): int;
+    abstract public function duracaoEmMinutos(): int;
 }

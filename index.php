@@ -2,6 +2,7 @@
 
 require __DIR__ . "/src/Model/Genero.php";
 require __DIR__ . "/src/Model/Titulo.php";
+require __DIR__ . "/src/Model/Episodio.php";
 require __DIR__ . "/src/Model/Serie.php";
 require __DIR__ . "/src/Model/Filme.php";
 require __DIR__ . "/src/Calculations/CalculadoraDeMaratona.php";
@@ -28,6 +29,7 @@ echo $filme->media() . "\n";
 echo $filme->anoLancamento . "\n";
 
 $serie = new Serie('Breaking bad', 2008, Genero::Drama, 10, 20, 30);
+$episodio = new Episodio($serie, 'Episodio piloto', 1);
 
 echo $serie->anoLancamento . "\n";
 
