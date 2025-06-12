@@ -1,11 +1,13 @@
 <?php
 
+require __DIR__ . "/src/Model/Avaliavel.php";
 require __DIR__ . "/src/Model/Genero.php";
 require __DIR__ . "/src/Model/Titulo.php";
 require __DIR__ . "/src/Model/Episodio.php";
 require __DIR__ . "/src/Model/Serie.php";
 require __DIR__ . "/src/Model/Filme.php";
 require __DIR__ . "/src/Calculations/CalculadoraDeMaratona.php";
+require __DIR__ . "/src/Calculations/ConversorNotaEstrela.php";
 
 
 echo "Bem-vindo ao ScreenMatch \n";
@@ -42,4 +44,8 @@ $calculadora->inclui($filme);
 $calculadora->inclui($serie);
 $duracao = $calculadora->duracao();  
 
-echo "Para essa maratona, você precisa de $duracao minutos";
+echo "Para essa maratona, você precisa de $duracao minutos \n";
+
+$conversor = new ConversorNotaEstrela();
+echo $conversor->Converte($serie) . "\n";
+echo $conversor->Converte($filme);
