@@ -1,5 +1,8 @@
 <?php
 
+namespace ScreenMatch\Calculations;
+use ScreenMatch\Model\Avaliavel;
+
 class ConversorNotaEstrela
 {
     public function converte(Avaliavel $avaliavel): float
