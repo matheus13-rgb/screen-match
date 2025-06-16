@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . "/src/Model/Avaliavel.php";
+require __DIR__ . "/src/Model/ComAvaliacao.php";
 require __DIR__ . "/src/Model/Genero.php";
 require __DIR__ . "/src/Model/Titulo.php";
 require __DIR__ . "/src/Model/Episodio.php";
