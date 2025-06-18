@@ -9,4 +9,4 @@ spl_autoload_register(function (string $className) {
      if(file_exists($caminhoCompleto)) {
          require_once $caminhoCompleto;
      }
-});
+});       
